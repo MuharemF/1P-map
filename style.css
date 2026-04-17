@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 8px;
+    background: #f7f8fb;
+    color: #222;
+}
+.top-bar {
+    max-width: 980px;
+    margin-bottom: 10px;
+}
+.top-bar h1 {
+    margin: 0 0 4px;
+    font-size: 20px;
+}
+.top-bar p {
+    margin: 0;
+    line-height: 1.35;
+    font-size: 12px;
+}
+.top-bar code {
+    background: #eef2f7;
+    padding: 1px 4px;
+    border-radius: 4px;
+    font-size: 11px;
+}
+.stage {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    background: #e3e8f1;
+    border: 1px solid #c8d2e0;
+    border-radius: 8px;
+    padding: 8px 0;
+    margin-bottom: 10px;
+}
+.seating {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 1px 0;
+}
+.row-o .center-block {
+    padding: 0 400px;
+}
+.row-a .center-block {
+    padding: 0 350px;
+}
+.row-label {
+    width: 20px;
+    min-width: 20px;
+    margin-right: 10px;
+    text-align: center;
+    color: #333;
+    font-weight: 700;
+}
+.seat-block {
+    display: flex;
+    gap: 4px;
+    flex-wrap: nowrap;
+}
+.seat-block.odd-wrap {
+    flex-wrap: nowrap;
+}
+.center-block {
+    justify-content: center;
+}
+.aisle {
+    width: 32px;
+    min-width: 32px;
+}
+.aisle.wide-aisle {
+    width: 48px;
+    min-width: 48px;
+}
+.seat {
+    min-width: 30px;
+    min-height: 26px;
+    padding: 4px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 1px solid rgba(51, 63, 79, 0.2);
+    background: #fafafc;
+    color: #333;
+}
+.seat.lit {
+    background: #ffea8b;
+    border-color: #ffcc00;
+    box-shadow: 0 0 18px rgba(255, 204, 0, 0.35);
+}
+.test-panel {
+    max-width: 980px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.test-panel input {
+    padding: 10px 12px;
+    width: 260px;
+    border-radius: 8px;
+    border: 1px solid #c0c7d9;
+    font-size: 14px;
+}
+.test-panel button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background: #0055a0;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+.test-panel button:hover {
+    background: #003f78;
+}
+@media (max-width: 860px) {
+    .row {
+        justify-content: center;
+    }
+}

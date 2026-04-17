@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Williamson Theatre Seat Map</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="top-bar">
+            <h1>Williamson Theatre Seat Map</h1>
+            <p>Rebuilt in HTML/CSS/JS. Use a URL like <code>?seat=F113</code>, <code>?seat=G1</code>, or <code>?seat=111</code> to highlight the matching seat.</p>
+        </div>
+        <div class="stage">STAGE</div>
+        <div class="seating" id="seating"></div>
+        <div class="test-panel">
+            <input id="test-input" placeholder="Enter seat ID (e.g. F113)" />
+            <button onclick="highlightSeat(document.getElementById('test-input').value)">Highlight Seat</button>
+        </div>
+        <script src="javaScript.js"></script>
+    </body>
+</html>
+
+
+
+
